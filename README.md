@@ -35,3 +35,8 @@ Site specific settings can be stored in code to save having to use custom argume
 1. Copy settings.example.sh and rename it as settings.sh
 2. Edit settings.sh to match your site's specific setup.
 3. Settings are ignored by Git so your customisations will be preserved if you run git pull.
+
+
+## GitHub
+
+This is my first public GitHub repo and kind of doubles up as an opportunity for me to get to grips with GitHub workflows a little better.
