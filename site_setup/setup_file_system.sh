@@ -7,9 +7,6 @@
 # you're likely now missing public, private & tmp file directories.
 # This script handles setting up a skeleton file system for you to then rsync user files up to.
 # It also makes sure that your codebase's file permissions are appropriately set.
-#
-# This script needs to be run as sudo.
-# This script expects settings.php to be configured and a working Drupal database to be in place.
 
 cd "${BASH_SOURCE%/*}" || exit
 . ../settings.sh
