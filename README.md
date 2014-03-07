@@ -14,13 +14,14 @@ Fixes file permissions throughout Drupal including public files. This is essenti
 ### druperms/fix_private.sh
 Fixes file permissions within the private files directory if it's located outside of Drupal root.
 
+## Installation
 
-## Location
+
+### Location
 
 These scripts need to be placed outside of Drupal root to avoid them becoming un-executable.
 
-
-## Permissions
+### Permissions
 
 Ensure that these scripts are made executable. For example:
 
