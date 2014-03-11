@@ -23,9 +23,7 @@ These scripts need to be placed outside of Drupal root to avoid them becoming un
 
 ### Permissions
 
-Ensure that these scripts are made executable. For example:
-
-chmod 740 -R ~/scripts/drupal_remote_scripts
+Ensure that these scripts are made executable.
 
 
 ## Config
