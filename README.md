@@ -1,21 +1,25 @@
 # Drupal remote scripts
 
+
 ## Description
 
 A small collection of scripts to help with managing a remote Drupal site.
 
 ### site_setup/setup_file_system.sh
-Builds skeleton directories for tmp, public & private file system and then fixes file permissions (site-wide from Drupal root and within private files outside Drupal root).
+Builds skeleton directories for tmp, public & private file system and then fixes file permissions for said directories.
 Useful when spinning up a new remote environment after pushing most of the site up via git or rsync.
 
-### druperms/fix_root.sh
-Fixes file permissions throughout Drupal including public files. This is essentially a wrapper for this script on Drupal.org: https://drupal.org/node/244924
-
 ### druperms/fix_private.sh
-Fixes file permissions within the private files directory if it's located outside of Drupal root.
+Fixes file permissions within the private files directory.
+
+### druperms/fix_public.sh
+Fixes file permissions within the public files directory.
+
+### druperms/fix_tmp.sh
+Fixes file permissions within the temporary files directory.
+
 
 ## Installation
-
 
 ### Location
 

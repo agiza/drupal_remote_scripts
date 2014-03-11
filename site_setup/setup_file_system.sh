@@ -22,21 +22,24 @@ if [ "$PRIVATE_FILES_PATH" != '' ]
     mkdir -p "$PRIVATE_FILES_PATH"
 fi
 
-cd "$DRUPAL_PATH"
 printf 'Creating public files directory.\n'
 mkdir -p "$PUBLIC_FILES_PATH"
 printf 'Creating temporary files directory.\n'
 mkdir -p "$TMP_FILES_PATH"
 
-# Setup ownership and permissions for all directories & files...
+# Setup ownership and permissions the following:
 
-# ...for the private files directory (outside of the Drupal installation),
+# Private files directory
 cd "${BASH_SOURCE%/*}" || exit
 ../druperms/fix_private.sh
 
-# ... and for the Drupal installation and any files directories within it.
+# Public files directory
 cd "${BASH_SOURCE%/*}" || exit
-../druperms/fix_root.sh
+../druperms/fix_public.sh
+
+# Temporary files directory
+cd "${BASH_SOURCE%/*}" || exit
+../druperms/fix_tmp.sh
 
 # Closing feedback
 printf $'\n'"File system initialised."$'\n'
