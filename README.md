@@ -33,7 +33,12 @@ Site specific settings can be stored in code to save having to use custom argume
 
 Ensure that these scripts are made executable.
 
+## Prerequisites
 
-## GitHub
+### Version control
+
+These scripts assume that your public, private and temporary files directories are outside of version control. Changing the permissions of files *in* version control may affect VCS status and will lead to possible complications.
+
+### GitHub
 
 This is my first public GitHub repo and kind of doubles up as an opportunity for me to get to grips with GitHub workflows a little better. You have been warned :)

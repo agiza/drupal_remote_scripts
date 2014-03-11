@@ -4,4 +4,4 @@ DruPerms is a collection of scripts designed to help with managing file permissi
 
 ## Prerequisites
 
-These scripts assume that your public, private and temporary files directories are outside of version control. Changing the permissions of files *in* version control may affect Git status and will lead to possible complications.
+These scripts assume that your public, private and temporary files directories are outside of version control. Changing the permissions of files *in* version control may affect VCS status and will lead to possible complications.
