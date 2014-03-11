@@ -12,11 +12,11 @@ DRUPAL_PATH='/home/dev/www'
 # Full path to private file directory (use '' for no private files directory)
 PRIVATE_FILES_PATH='/home/dev/private'
 
-# Path to public files directory (relative to Drupal root)
-PUBLIC_FILES_PATH='sites/default/files/public'
+# Path to public files directory
+PUBLIC_FILES_PATH='/home/dev/www/sites/default/files/public'
 
-# Path to temporary files directory (relative to Drupal root)
-TMP_FILES_PATH='sites/default/files/tmp'
+# Path to temporary files directory
+TMP_FILES_PATH='/home/dev/www/sites/default/files/tmp'
 
 
 # =====
