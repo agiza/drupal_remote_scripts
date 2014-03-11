@@ -36,4 +36,4 @@ Ensure that these scripts are made executable.
 
 ## GitHub
 
-This is my first public GitHub repo and kind of doubles up as an opportunity for me to get to grips with GitHub workflows a little better.
+This is my first public GitHub repo and kind of doubles up as an opportunity for me to get to grips with GitHub workflows a little better. You have been warned :)
