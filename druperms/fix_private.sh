@@ -14,6 +14,7 @@ if [ "$PRIVATE_FILES_PATH" != '' ]
            find $d -type d -exec chmod ug=rwx,o= '{}' \;
            find $d -type f -exec chmod ug=rw,o= '{}' \;
         done
+        chmod 444 .htaccess
         printf $'\n'"Done setting proper permissions on private files and directories."$'\n'
     else
         printf $'\n'"There is no private files directory specified in settings.sh"$'\n'

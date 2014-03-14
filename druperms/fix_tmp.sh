@@ -14,6 +14,7 @@ if [ "$TMP_FILES_PATH" != '' ]
            find $d -type d -exec chmod ug=rwx,o= '{}' \;
            find $d -type f -exec chmod ug=rw,o= '{}' \;
         done
+        chmod 444 .htaccess
         printf $'\n'"Done setting proper permissions on temporary files and directories."$'\n'
     else
         printf $'\n'"There is no temporary files directory specified in settings.sh"$'\n'
