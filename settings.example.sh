@@ -28,3 +28,17 @@ DRUPAL_USER='dev'
 
 # The UNIX user that Apache is running as
 HTTPD_GROUP='www-data'
+
+
+# =======
+# BACKUPS
+# =======
+
+# Connection to remote location
+BACKUP_REMOTE_CONNECTION='dev@95.85.19.159'
+
+# Where on the remote to store backups of the public files directory
+BACKUP_REMOTE_DIR_PUBLIC='prod_backup/public_files'
+
+# Where on the remote to store backups of the private files directory
+BACKUP_REMOTE_DIR_PRIVATE='prod_backup/private_files'
