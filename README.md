@@ -16,7 +16,7 @@ Fixes file permissions within the public files directory.
 #### druperms/fix_tmp.sh
 Fixes file permissions within the temporary files directory.
 
-### Off-site backup of user files.
+### Off-site backup of user files
 
 #### backup/backup_public_files.sh
 Off-site backup of public file system via rsync.
