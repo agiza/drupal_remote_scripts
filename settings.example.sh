@@ -35,7 +35,7 @@ HTTPD_GROUP='www-data'
 # =======
 
 # Connection to remote location
-BACKUP_REMOTE_CONNECTION='dev@95.85.19.159'
+BACKUP_REMOTE_CONNECTION='dev@xx.xx.xx.xxx'
 
 # Where on the remote to store backups of the public files directory
 BACKUP_REMOTE_DIR_PUBLIC='prod_backup/public_files'
