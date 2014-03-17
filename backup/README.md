@@ -9,11 +9,14 @@ Backup retention is currently set to a maximum of 10 complete copies at any one 
 
 - Passwordless authentication is in place allowing one server (where your site is hosted) to SSH into the other (where the backups are to be stored).
 - Directories have been created at the remote end as per your preferences in settings.sh.
+- A local directory has been created to store the backup.log file as per settings.sh and is writable by hte user(s) that the scripts will be run as.
 
 
 ## Roadmap
 
-- Keep a log at the remote end.
+- Keep a a copy of the log at the remote end.
+
+- Log rotation.
 
 - Parameterise backup retention.
 

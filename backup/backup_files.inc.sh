@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo ""
-
 # Manage files at remote end first.
 
 echo "Removing oldest existing backup..."
@@ -21,7 +19,6 @@ ssh "$BACKUP_REMOTE_CONNECTION" cp -al "$REMOTE_DIR"/backup.0 "$REMOTE_DIR"/back
 # Start backing up local files to remote end.
 
 echo "Initiating backup via rsync..."
-/usr/bin/rsync -av "$LOCAL_DIR" "$BACKUP_REMOTE_CONNECTION":"$REMOTE_DIR"/backup.0 --delete
+/usr/bin/rsync -av "$LOCAL_DIR" "$BACKUP_REMOTE_CONNECTION":"$REMOTE_DIR"/backup.0 --delete --log-file="$BACKUP_LOG_DIR"/backup.log
 
-echo ""
 echo "Backup complete."

@@ -42,3 +42,6 @@ BACKUP_REMOTE_DIR_PUBLIC='prod_backup/public_files'
 
 # Where on the remote to store backups of the private files directory
 BACKUP_REMOTE_DIR_PRIVATE='prod_backup/private_files'
+
+# Where to store the rsync log file (local system)
+BACKUP_LOG_DIR='/home/dev/scripts/logs' # No trailing slash!
