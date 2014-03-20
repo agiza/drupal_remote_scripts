@@ -6,27 +6,38 @@
 A small collection of scripts to help with managing a remote Drupal site.
 
 ### Fixing permissions
-
-#### druperms/fix_private.sh
+```
+druperms/fix_private.sh
+```
 Fixes file permissions within the private files directory.
 
-#### druperms/fix_public.sh
+```
+druperms/fix_public.sh
+```
 Fixes file permissions within the public files directory.
 
-#### druperms/fix_tmp.sh
+```
+druperms/fix_tmp.sh
+```
 Fixes file permissions within the temporary files directory.
 
 ### Off-site backup of user files
 
-#### backup/backup_public_files.sh
+```
+backup/backup_public_files.sh
+```
 Off-site backup of public file system via rsync.
 
-#### backup/backup_private_files.sh
+```
+backup/backup_private_files.sh
+```
 Off-site backup of private file system via rsync.
 
 ### Misc.
 
-#### site_setup/setup_file_system.sh
+```
+site_setup/setup_file_system.sh
+```
 Builds skeleton directories for tmp, public & private file system and then fixes file permissions for said directories.
 Useful when spinning up a new remote environment after pushing most of the site up via git or rsync.
 
@@ -37,8 +48,8 @@ Useful when spinning up a new remote environment after pushing most of the site 
 
 Site specific settings can be stored in code to save having to use custom arguments every time a script is called.
 
-1. Copy settings.example.sh and rename it as settings.sh
-2. Edit settings.sh to match your site's specific setup.
+1. Copy ```settings.example.sh``` and rename it to ```settings.sh```
+2. Edit ```settings.sh``` to match your site's specific setup.
 3. Settings are ignored by Git so your customisations will be preserved if you run git pull.
 
 ### Permissions
