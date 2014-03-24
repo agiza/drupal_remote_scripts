@@ -8,8 +8,8 @@ Backup retention is currently set to a maximum of 10 complete copies at any one 
 ## Prerequisites
 
 - Passwordless authentication is in place allowing one server (where your site is hosted) to SSH into the other (where the backups are to be stored).
-- Directories have been created at the remote end as per your preferences in settings.sh.
-- A local directory has been created to store the backup.log file as per settings.sh and is writable by the user(s) that the scripts will be run as.
+- Directories for storing backups have been created at the remote end as per your preferences in ```settings.sh```. Each of these directories will need to contain a writable subdirectory named ```backup.0```.
+- A local directory has been created to store the ```backup.log``` file as per ```settings.sh``` and is writable by the user(s) that the scripts will be run as.
 
 
 ## Roadmap
@@ -21,3 +21,5 @@ Backup retention is currently set to a maximum of 10 complete copies at any one 
 - Parameterise backup retention.
 
 - Add support for rsync exclusion to prevent backup of certain files.
+
+- Ease initial backup by automating setup of required directories (e.g. ```backup.*``` subdirectories).
