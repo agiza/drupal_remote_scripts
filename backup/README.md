@@ -27,11 +27,12 @@ Backup retention is currently set to a maximum of 10 complete copies at any one 
 
 ### Quick setup of SSH keys between servers
 
-- SSH into the source server (the server you wish to backup).
-- Generate SSH keys for that server if not already in place (agree to all defaults by repeatedly hitting return).
-
-```ssh-keygen -t rsa```
-
-- Install the public key in the destination server's ```authorized_keys``` (replace with your destination machine's connection details). This will ask for the destination server's password.
-
-```ssh-copy-id user@destination-server.com```
+- 1) SSH into the source server (the server you wish to backup).
+- 2) Generate SSH keys for that server if not already in place (agree to all defaults by repeatedly hitting return).
+```
+ssh-keygen -t rsa
+```
+- 3) Install the public key in the destination server's ```authorized_keys``` (replace with your destination machine's connection details). This will ask for the destination server's password.
+```
+ssh-copy-id user@destination-server.com
+```
