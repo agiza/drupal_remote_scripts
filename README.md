@@ -54,8 +54,11 @@ Site specific settings can be stored in code to save having to use custom argume
 
 ### Permissions
 
-Ensure that these scripts are made executable.
+Ensure that these scripts are made executable. For example:
 
+```
+chmod a+x path/to/drupal_remote_scripts/druperms/fix_public.sh
+```
 
 ## Prerequisites
 
